@@ -1,0 +1,19 @@
+{
+  "name": "myapp",
+  "version": "1.0.0",
+  "description": "Aprendendo a usar Gulp, Bower e Angular juntos",
+  "main": "myApp.js",
+  "author": "Ana Santos<anasantos1103@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "angular": "^1.6.6",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1",
+    "angular-ui-router": "^1.0.12"
+  }
+}

@@ -1,0 +1,15 @@
+{
+    "name": "myapp",
+    "version": "1.0.0",
+    "description": "Aprendendo a usar Gulp, Bower e Angular juntos",
+    "main": "myApp.js",
+    "author": "Ana Paula<anasantos1103@gmail.com>",
+    "devDependencies": {
+        "bower": "^1.8.2",
+        "gulp": "*",
+        "gulp-concat": "*",
+        "gulp-filter": "^5.1.0",
+        "gulp-main-bower-files": "^1.6.2",
+        "gulp-uglify": "^3.0.0"
+    }
+}

@@ -8,7 +8,7 @@ angular.module('myApp')
       .state('home', {
         url: '/home',
         views: {
-          'content@': {
+          'home@': {
             templateUrl: 'templates/home.html',
             controller: 'HomeController'
           }
@@ -17,33 +17,33 @@ angular.module('myApp')
       .state('login', {
         url: '/login',
         views: {
-          'content@': {
+          'login@': {
             templateUrl: 'templates/login.html',
-            controller: 'HomeController'
+            controller: 'LoginController'
           }
         }
       })
-      .state('about', {
-        parent: 'home',
-        url: '/about',
-        views: {
-          'contentHome@home': {
-            templateUrl: 'templates/about.html',
-            controller: 'AboutController'
-          }
-        }
-
-      })
-      .state('contact', {
-        parent: 'home',
-        url: '/contact',
-        views: {
-          'contentHome@home': {
-            templateUrl: 'templates/contact.html',
-            controller: 'ContactController'
-          }
-        }
-      });
+       .state('about', {
+         parent: 'home',
+         url: '/about',
+         views: {
+           'home@': {
+             templateUrl: 'templates/about.html',
+             controller: 'AboutController'
+           }
+         }
+ 
+       })
+       .state('contact', {
+         parent: 'home',
+         url: '/contact',
+         views: {
+           'home@': {
+             templateUrl: 'templates/contact.html',
+             controller: 'ContactController'
+           }
+         }
+       });
 
     // Utilizando o HTML5 History API
     //$locationProvider.html5Mode(true);
